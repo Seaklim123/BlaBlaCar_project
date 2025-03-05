@@ -1,4 +1,4 @@
-import 'package:flutterstrat/model/ride/locations.dart';
+import 'package:flutterstrat/week3/model/ride/locations.dart';
 
 import '../dummy_data/dummy_data.dart';
 

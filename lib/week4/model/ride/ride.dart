@@ -1,4 +1,4 @@
-import 'package:flutterstrat/model/ride/locations.dart';
+import 'package:flutterstrat/week4/model/ride/locations.dart';
 
 import '../../utils/date_time_util.dart';
 import '../user/user.dart';
@@ -24,6 +24,7 @@ class Ride {
 
   final int availableSeats;
   final double pricePerSeat;
+  final bool acceptPets;
 
   RideStatus status = RideStatus.created;
 
@@ -37,6 +38,7 @@ class Ride {
     required this.driver,
     required this.availableSeats,
     required this.pricePerSeat,
+    this.acceptPets = false,
   });
 
   void addPassenger(User passenger) {
